@@ -30,7 +30,9 @@ public abstract class Screen {
                     product = p;
                     found = true;
                     return product;
-                } else {
+                } 
+                
+                if (products.get(products.size() - 1) == p && !found){
                     ProccessHelper.write("PRODUTO INEXISTENTE!");
                     ProccessHelper.write("DIGITE O NOME DO PRODUTO: ");
                 }
